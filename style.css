@@ -334,6 +334,7 @@ body::before {
         opacity: 0.24387;
     }
 }
+
 /* Splash Screen */
 .splash-overlay {
     position: fixed;
@@ -359,4 +360,18 @@ body::before {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.footnote {
+    font-size: 1.2rem;
+    color: #888;
+    margin-top: 1.5rem;
+    font-style: italic;
+    letter-spacing: 0.05rem;
+}
+
+footer .footnote {
+    margin-top: 0.5rem;
+    width: 100%;
+    text-align: center;
 }

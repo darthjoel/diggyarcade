@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Arcade Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="splash-screen" class="splash-overlay">
+        <div class="splash-content">
+            <h1 class="neon-text large">DIGGY ARCADE</h1>
+            <button id="enter-btn" class="neon-button extra-large">ENTER THE DIGGY ARCADE</button>
+        </div>
+    </div>
+
+    <div class="crt-overlay"></div>
+    <div class="scanlines"></div>
+
+    <div class="arcade-container">
+        <header>
+            <h1 class="neon-text">DIGGY ARCADE</h1>
+            <div class="header-controls">
+                <p class="blink">INSERT COIN TO START</p>
+            </div>
+        </header>
+        <button id="mute-btn" class="neon-button mute-position">MUTE</button>
+        <audio id="bg-music" loop autoplay>
+            <source src="arcade-music.m4a" type="audio/mp4">
+        </audio>
+
+        <main class="game-selection">
+            <div class="game-list" id="game-list">
+                <a href="games/dragon-breath/index.html" class="game-item selected" data-game="dragon-breath">
+                    <span class="selector">>></span> DRAGON BREATH
+                </a>
+                <a href="games/trump-vs-democrats/index.html" class="game-item" data-game="trump-vs-democrats">
+                    <span class="selector">>></span> TRUMP VS THE DEMOCRATS
+                </a>
+            </div>
+        </main>
+
+        <footer>
+            <div class="stats">
+                <span>CREDITS: 99</span>
+                <span>HIGH SCORE: 1,000,000</span>
+            </div>
+            <div class="controls-hint">
+                USE ARROWS TO SELECT | ENTER TO PLAY
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

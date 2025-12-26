@@ -13,8 +13,8 @@ rm -rf "$DIST_DIR"
 mkdir -p "$GAMES_DIR"
 
 # 2. Copy landing page files
-cp index.html style.css script.js arcade-music.m4a "$DIST_DIR/"
-echo "✅ Copied landing page files and music."
+cp index.html style.css script.js arcade-music.m4a diggy_arcade.jpg "$DIST_DIR/"
+echo "✅ Copied landing page files and assets."
 
 # Function to fix absolute paths in index.html for bundled games
 fix_paths() {
